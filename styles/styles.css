@@ -112,14 +112,11 @@ body {
   align-items: center;
   padding: 63px 240px 80px;
 }
-.advantages-container .section-title {
+.advantages-container .section-header {
   width: 720px;
-  margin-top: 0px;
   margin-bottom: 31px;
 }
 .advantages-container .section-description {
-  width: 720px;
-  margin-top: 0px;
   margin-bottom: 0px;
 }
 .section-header {
@@ -128,6 +125,9 @@ body {
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 29px;
+  width: 720px;
 }
 .section-description {
   font-size: 22px;
@@ -135,6 +135,7 @@ body {
   text-align: center;
   color: #333333;
   width: 720px;
+  margin-top: 0;
 }
 .advantages-list {
   list-style-type: none;
@@ -246,14 +247,8 @@ body {
   align-items: center;
   padding: 91px 240px 93px;
 }
-.hotel-search .section-title {
-  width: 720px;
-  margin-top: 0px;
-  margin-bottom: 29px;
-}
 .hotel-search .section-description {
   line-height: 26px;
-  margin-top: 0px;
   margin-bottom: 56px;
 }
 .search-button {
@@ -270,6 +265,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 94px 200px 93px;
 }
 .subscribtion-index {
   background-image: url("../images/index-footer-background.jpg");
@@ -278,11 +274,15 @@ body {
 }
 .subscribtion-index .section-header {
   color: #FFFFFF;
-
 }
 .subscribtion-index .section-description {
   color: #FFFFFF;
   line-height: 26px;
+  margin-bottom: 46px;
+}
+.subscribtion-form {
+  width: 800px;
+  margin: 0;
 }
 .subscribtion-button {
   background-color: #83B3D3;
@@ -290,15 +290,26 @@ body {
 }
 .contacts {
   background-color: #FFFFFF;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 72px;
 }
 .footer-social-list {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 107px;
 }
 .contacts-phone {
   color: #000000;
   font-size: 40px;
   line-height: 40px;
   text-decoration: none;
+  text-align: center;
+  width: 720px;
 }
 .main-inner {
   background-color: #FFFFFF;
@@ -323,7 +334,6 @@ body {
   text-decoration: none;
   font-size: 16px;
   line-height: 21px;
-
 }
 .catalog-filter-group {
   border: 0;
