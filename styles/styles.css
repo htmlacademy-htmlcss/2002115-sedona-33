@@ -377,33 +377,56 @@ body {
   text-transform: none;
   font-weight: 400;
 }
+.search-results {
+  display: flex;
+  flex-direction: column;
+  padding: 44px 72px 54px;
+}
+.search-results-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 53px;
+}
 .search-results-amount {
   font-weight: 700;
   text-transform: uppercase;
   font-size: 30px;
   line-height: 39px;
   text-align: left;
+  width: 360px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: auto;
 }
 .search-results-amount .control-select {
   border: 2px solid #E5E5E5;
   border-radius: 4px;
-  width: 287px;
-  height: 517px;
   font-size: 18px;
   line-height: 23px;
   text-align: left;
+  width: 287px;
+  margin-right: 81px;
 }
 .presentation-list {
   list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
 }
 .presentation-button {
   width: 48px;
   height: 48px;
   border-radius: 4px;
   border: 2px solid #E5E5E5;
+  display: block;
 }
 .hotel-card-list {
   list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
 }
 .hotel-card-link {
   text-decoration: none;
@@ -449,6 +472,15 @@ body {
   height: 18px;
   border-radius: 4px;
 }
+.inner-footer {
+  margin: 0 72px;
+}
+.hotels-loading {
+  border-top: 1px solid #E6E6E6;
+  border-bottom: 1px solid #E6E6E6;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 .loading-button {
   background-color: #83B3D3;
   text-decoration: none;
@@ -457,9 +489,22 @@ body {
   width: 620px;
   height: 60px;
   border-radius: 4px;
+  display: block;
+  margin: 0 auto;
+}
+.inner-footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
 }
 .pagination {
   list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 371px;
 }
 .pagination-link {
   color: #FFFFFF;
@@ -471,6 +516,7 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
+  display: block;
 }
 .pagination-current {
   color: #000000;
