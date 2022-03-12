@@ -380,15 +380,24 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  padding: 35px 71px 72px 83px;
 }
 .inner-header-title {
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
   text-align: left;
+  margin-top: 0;
+  margin-bottom: 5px;
 }
 .breadcrumbs {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  min-width: 111px;
+  justify-content: space-between;
+  margin-bottom: 45px;
 }
 .breadcrumbs-link {
   color: #FFFFFF;
@@ -401,12 +410,26 @@ body {
 }
 .catalog-filter-group {
   border: 0;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  margin-right: 67px;
 }
+.catalog-filter-group:first
 .catalog-filter-title {
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
   text-align: left;
+  margin-bottom: 30px;
+}
+.catalog-filter-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
 }
 .control {
   font-size: 18px;
