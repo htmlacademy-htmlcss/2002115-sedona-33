@@ -380,12 +380,12 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 35px 71px 72px 83px;
+  padding: 35px 71px 70px 72px;
 }
 .inner-header-title {
   font-weight: 700;
   font-size: 60px;
-  line-height: 78px;
+  line-height: 60px;
   text-align: left;
   margin-top: 0;
   margin-bottom: 5px;
@@ -405,6 +405,9 @@ body {
   font-size: 16px;
   line-height: 21px;
 }
+.catalog-hotels {
+  width: 1057px;
+}
 .catalog-filter {
   display: flex;
 }
@@ -414,14 +417,20 @@ body {
   flex-direction: column;
   margin: 0;
   padding: 0;
+  min-width: 150px;
+  flex-wrap: wrap;
   margin-right: 67px;
 }
-.catalog-filter-group:first
+.catalog-filter-group:nth-child(3) {
+  margin-right: 0;
+  margin-left: auto;
+}
 .catalog-filter-title {
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
   text-align: left;
+  padding: 0;
   margin-bottom: 30px;
 }
 .catalog-filter-list {
@@ -429,24 +438,46 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: baseline;
   flex-direction: column;
+}
+.catalog-filter-item {
+  display: flex;
+  width: 100%;
+  margin-bottom: 13px;
 }
 .control {
   font-size: 18px;
   line-height: 23px;
   text-align: left;
+  order: 2;
+  width: auto;
 }
-.catalog-filter-list {
-  list-style-type: none;
+.control-input {
+  min-height: 20px;
+  min-width: 20px;
+  margin: 0;
+  margin-right: 19px;
+  align-self: start;
+}
+.catalog-filter-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  min-width: 160px;
+  margin-left: 81px;
 }
 .apply-button {
   background-color: #83B3D3;
   font-size: 16px;
   line-height: 21px;
   width: 160px;
-  height: 48px;
   border-radius: 4px;
   border: 0;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  margin-top: 7px;
 }
 .reset-button {
   background-color: transparent;
@@ -454,9 +485,11 @@ body {
   font-size: 18px;
   line-height: 23px;
   width: 160px;
-  height: 48px;
   text-transform: none;
   font-weight: 400;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  margin-top: 7px;
 }
 .search-results {
   display: flex;
@@ -503,11 +536,18 @@ body {
 }
 .hotel-card-list {
   list-style-type: none;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 340px 340px 340px;
+  gap: 10px 18px;
   margin: 0;
   padding: 0;
   justify-content: space-between;
+}
+.hotel-card {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 20px;
 }
 .hotel-card-link {
   text-decoration: none;
