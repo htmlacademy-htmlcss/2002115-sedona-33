@@ -152,7 +152,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   display: block;
-  margin-top: 0;
+  margin: 0 auto;
   margin-bottom: 29px;
   width: 720px;
 }
@@ -166,7 +166,7 @@ body {
   color: #333333;
   display: block;
   width: 720px;
-  margin: 0;
+  margin: 0 auto;
 }
 .advantages-list {
   list-style-type: none;
@@ -312,23 +312,30 @@ body {
 }
 .subscribtion {
   background-color: #FFFFFF;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 94px 200px 93px;
+  padding: 94px 200px;
 }
 .subscribtion-index {
   background-image: url("../images/index-footer-background.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
 }
+.subscribtion-catalog {
+  padding-bottom: 104px;
+}
 .subscribtion-index .section-title {
   color: #FFFFFF;
+  width: 720px;
+}
+.subscribtion-catalog .section-title {
+  width: 720px;
+  margin-bottom: 46px;
+}
+.subscribtion .section-description {
+  line-height: 26px;
+  margin-bottom: 46px;
 }
 .subscribtion-index .section-description {
   color: #FFFFFF;
-  line-height: 26px;
-  margin-bottom: 46px;
 }
 .subscribtion-form-email {
   width: 800px;
@@ -337,9 +344,22 @@ body {
   display: flex;
   justify-content: center;
 }
+.subscribtion-form-email input {
+  display: block;
+  width: 600px;
+  font-size: 18px;
+  line-height: 26px;
+  padding: 17px 20px;
+  border: 0;
+}
 .subscribtion-button {
   background-color: #83B3D3;
   border: 0;
+  width: 200px;
+  font-size: 20px;
+  line-height: 26px;
+  padding-top: 17px;
+  padding-bottom: 17px;
 }
 .contacts {
   background-color: #FFFFFF;
@@ -498,6 +518,7 @@ body {
 }
 .search-results-header {
   display: flex;
+  width: 100%;
   align-items: center;
   margin-bottom: 53px;
 }
@@ -512,27 +533,34 @@ body {
   margin-bottom: 0;
   margin-right: auto;
 }
-.search-results-amount .control-select {
+.search-results-header .control-select {
   border: 2px solid #E5E5E5;
   border-radius: 4px;
   font-size: 18px;
   line-height: 23px;
   text-align: left;
+  display: block;
   width: 287px;
   margin-right: 81px;
 }
 .presentation-list {
   list-style-type: none;
   display: flex;
+  min-width: 160px;
   margin: 0;
   padding: 0;
 }
+.presentation-item:not(:last-child) {
+  margin-right: 8px;
+}
 .presentation-button {
   width: 48px;
-  height: 48px;
   border-radius: 4px;
   border: 2px solid #E5E5E5;
   display: block;
+  line-height: 14px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 .hotel-card-list {
   list-style-type: none;
@@ -544,33 +572,52 @@ body {
   justify-content: space-between;
 }
 .hotel-card {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
   padding: 20px;
 }
 .hotel-card-link {
   text-decoration: none;
   color: #000000;
 }
+.hotel-card-image {
+  margin-bottom: 16px;
+}
 .hotel-card-title {
   font-size: 24px;
   line-height: 31px;
   text-align: left;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+.card-description-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 16px;
 }
 .hotel-card-description {
   font-size: 18px;
   line-height: 23px;
   text-align: left;
+  display: block;
+  width: 143px;
+  margin: 0;
+}
+.card-buttons-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 16px;
 }
 .details-button {
   background-color: #756257;
   text-decoration: none;
+  text-align: center;
   font-size: 16px;
   line-height: 21px;
   width: 133px;
-  height: 37px;
   border-radius: 4px;
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 .favorites-button {
   background-color: #83B3D3;
@@ -578,11 +625,24 @@ body {
   font-size: 16px;
   line-height: 21px;
   width: 140px;
-  height: 37px;
   border-radius: 4px;
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 .favorites-button-added {
   background-color: #7DB54F;
+}
+.card-category-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.hotel-category {
+  display: flex;
+  max-width: 133px;
+}
+.category-star:not(:last-child) {
+  margin-right: 7px;
 }
 .hotel-rating {
   color: #000000;
@@ -590,8 +650,12 @@ body {
   font-size: 16px;
   line-height: 21px;
   width: 160px;
-  height: 18px;
   border-radius: 4px;
+  text-align: center;
+  display: block;
+  margin: 0;
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 .inner-footer {
   margin: 0 72px;
@@ -608,15 +672,14 @@ body {
   font-size: 20px;
   line-height: 26px;
   width: 620px;
-  height: 60px;
   border-radius: 4px;
   display: block;
   margin: 0 auto;
+  padding-top: 17px;
+  padding-bottom: 17px;
 }
 .inner-footer-container {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
   margin-top: 30px;
 }
 .pagination {
@@ -625,30 +688,52 @@ body {
   padding: 0;
   display: flex;
   justify-content: space-between;
-  width: 371px;
+  min-width: 371px;
+  margin-right: auto;
 }
 .pagination-link {
   color: #FFFFFF;
   background-color: #83B3D3;
   text-decoration: none;
   width: 55px;
-  height: 55px;
   border-radius: 4px;
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
+  text-align: center;
   display: block;
+  padding-top: 14px;
+  padding-bottom: 14px;
 }
 .pagination-current {
   color: #000000;
   background-color: #F2F2F2;
   text-decoration: none;
   width: 55px;
-  height: 55px;
   border-radius: 4px;
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
+}
+.amount-select-container {
+  display: flex;
+  align-items: center;
+}
+.amount-select-container label {
+  display: block;
+  width: 175px;
+  font-size: 18px;
+  line-height: 23px;
+}
+.amount-select-container .control-select {
+  width: 160px;
+  margin-left: 51px;
+  border: 2px solid #E6E6E6;
+  border-radius: 4px;
+  font-size: 18px;
+  line-height: 23px;
+  padding-top: 11px;
+  padding-bottom: 10px;
 }
 
 
