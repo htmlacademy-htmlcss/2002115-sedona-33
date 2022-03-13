@@ -137,9 +137,6 @@ body {
   margin: 0;
 }
 .advantages-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   padding: 63px 240px 80px;
 }
 .advantages-container .section-description {
@@ -291,9 +288,6 @@ body {
   margin-bottom: 20px;
 }
 .hotel-search {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   padding: 91px 240px 93px;
 }
 .hotel-search .section-description {
@@ -309,6 +303,7 @@ body {
   width: 575px;
   padding-top: 12px;
   padding-bottom: 12px;
+  margin: 0 auto;
 }
 .subscribtion {
   background-color: #FFFFFF;
