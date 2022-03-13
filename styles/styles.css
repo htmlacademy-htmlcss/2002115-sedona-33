@@ -346,6 +346,8 @@ body {
   line-height: 26px;
   padding: 17px 20px;
   border: 0;
+  background-color: #F2F2F2;
+  border-radius: 10px 0px 0px 10px;
 }
 .subscribtion-button {
   background-color: #83B3D3;
@@ -355,6 +357,7 @@ body {
   line-height: 26px;
   padding-top: 17px;
   padding-bottom: 17px;
+  border-radius: 0px 10px 10px 0px;
 }
 .contacts {
   background-color: #FFFFFF;
