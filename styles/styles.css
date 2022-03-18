@@ -1292,6 +1292,7 @@ body {
   display: flex;
   justify-content: space-between;
   position: relative;
+  align-items: center;
 }
 .modal-header .section-title {
   text-align: left;
@@ -1345,11 +1346,16 @@ body {
   display: flex;
   justify-content: space-between;
 }
+.adult-guests {
+  width: 288px;
+}
+.children-guests {
+  width: 230px;
+}
 .search-field label {
   font-size: 18px;
   line-height: 40px;
   font-weight: 700;
-  align-self: center;
 }
 .search-field input {
   font-family: "PT Sans", Arial, sans-serif;
@@ -1408,26 +1414,16 @@ body {
   padding: 0;
   text-align: center;
 }
-.guests-amount label {
-  margin-right: 53.5px;
-}
-input[id="adults"] {
-  margin-left: 19.5px;
-}
-.children::after {
-  content: "";
+.tooltip-toggle {
+  display: block;
   width: 25px;
   height: 25px;
   background-color: #83B3D3;
   border-radius: 50%;
-  background-image: url("../images/info-icon.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  position: absolute;
-  top: 14px;
-  right: 151px;
-}
-.children::after:hover {
+  border: none;
+  margin-right: 10px;
+  }
+.tooltip-toggle:hover {
   background-color: #68A2CA ;
 }
 .spin-button {
@@ -1476,5 +1472,36 @@ input[id="adults"] {
   border-radius: 10px;
 }
 .modal-container-close {
+}
+.tooltip-text {
+  display: block;
+  width: 216px;
+  padding: 20px 20px 24px 21px;
+  color: #FFFFFF;
+  font-size: 16px;
+  line-height: 20px;
+  background-color: #333333;
+  border-radius: 10px;
+  margin-top: 9px;
+  position: absolute;
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
+  top: 88%;
+  right: 16%;
   display: none;
+}
+.tooltip-toggle:hover + .tooltip-text,
+.tooltip-toggle:focus + .tooltip-text {
+  display: block;
+}
+.tooltip-text::before {
+  content: "";
+  display: block;
+  width: 256px;
+  height: 9px;
+  background-image: url("../images/info-triangle.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: -9px;
+  right: 0px;
 }
