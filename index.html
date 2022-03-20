@@ -50,6 +50,7 @@
       <main class="main-container main-index">
         <h1 class="visually-hidden">Город Седона</h1>
         <section class="banner">
+          <h2 class="visually-hidden">Баннер</h2>
           <img class="banner-content" src="images/welcome.svg" width="458" height="352" alt="Добро пожаловать в великолепную Седону. Потому что Гранд Каньон отстой!">
         </section>
         <section class="advantages">
@@ -178,16 +179,17 @@
             </button>
           </header>
           <section class="modal-search">
+            <h3 class="visually-hidden">Форма поиска гостиниц</h2>
             <form class="modal-search-form" action="https://echo.htmlacademy.ru/" method="post">
               <p class="search-field">
                 <label for="arrival-date">Дата заезда:</label>
                 <input type="text" id="arrival-date" name="arrival-date" placeholder="Укажите дату" value="27 апреля 2020">
-                <p class="status status-error">Мы не можем отправить вас в прошлое.</p>
+                <span class="status status-error">Мы не можем отправить вас в прошлое.</span>
               </p>
               <p class="search-field">
                 <label for="date-of-departure">Дата выезда:</label>
                 <input type="text" id="date-of-departure" name="date-of-departure" placeholder="Укажите дату" value="1 сентября 2021">
-                <p class="status">На эти даты есть свободные номера. Пока есть.</p>
+                <span class="status">На эти даты есть свободные номера. Пока есть.</span>
               </p>
               <p class="search-field guests-amount adult-guests">
                 <label class="adults" for="adults">Взрослые:</label>
