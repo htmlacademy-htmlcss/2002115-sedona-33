@@ -1374,9 +1374,9 @@ body {
   font-weight: 700;
 }
 .search-field input[type="text"] {
-  width: 155px;
+  width: 351px;
   height: 50px;
-  padding: 0 246px 0 19px;
+  padding: 0 50px 0 19px;
   border-radius: 4px;
   background-image: url("../images/calendar.svg");
   background-repeat: no-repeat;
