@@ -1475,7 +1475,7 @@ body {
   border-radius: 10px;
 }
 .modal-container-close {
-  display: ;
+  display: none;
 }
 .tooltip-text {
   display: block;
