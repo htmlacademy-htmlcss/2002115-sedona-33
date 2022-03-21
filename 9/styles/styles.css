@@ -1290,8 +1290,6 @@ body {
 .search-field  {
   margin: 0;
   display: flex;
-  justify-content: space-between;
-  position: relative;
   align-items: center;
 }
 .modal-header .section-title {
@@ -1356,6 +1354,7 @@ body {
   font-size: 18px;
   line-height: 40px;
   font-weight: 700;
+  margin-right: auto;
 }
 .search-field input {
   font-family: "PT Sans", Arial, sans-serif;
@@ -1363,7 +1362,6 @@ body {
   line-height: 40px;
   border: 0;
   background-color: #F2F2F2;
-  border-radius: 4px;
   color: #000000;
   font-weight: 700;
 }
@@ -1376,9 +1374,10 @@ body {
   font-weight: 700;
 }
 .search-field input[type="text"] {
-  width: 155px;
+  width: 351px;
   height: 50px;
-  padding: 0 246px 0 19px;
+  padding: 0 50px 0 19px;
+  border-radius: 4px;
   background-image: url("../images/calendar.svg");
   background-repeat: no-repeat;
   background-position: right 19px center;
@@ -1387,6 +1386,7 @@ body {
   background-color: #E6E6E6;
 }
 .search-field input:focus{
+  z-index: 1;
   background-color: #E6E6E6;
   outline: 3px solid #83B3D3;
 }
@@ -1409,7 +1409,7 @@ body {
   margin-bottom: 40px;
 }
 .search-field input[type="number"] {
-  width: 133px;
+  width: 44.5px;
   height: 50px;
   padding: 0;
   text-align: center;
@@ -1421,46 +1421,49 @@ body {
   background-color: #83B3D3;
   border-radius: 50%;
   border: none;
-  margin-right: 10px;
-  }
+  margin-right: 20px;
+}
 .tooltip-toggle:hover {
   background-color: #68A2CA ;
 }
 .spin-button {
-  width: 25px;
-  height: 25px;
+  width: 44.5px;
+  margin:0;
   border: none;
-  background-color: transparent;
-  border-radius: 4px;
-  position: absolute;
+  background-color: #F2F2F2;
 }
 .spin-button svg {
-  position: absolute;
-  top: 6px;
-  left: 6px;
+  display: block;
   fill: rgba(0, 0, 0, 0.3);
-}
+  padding: 6px;
+  cursor: pointer;
+ }
 .inner-spin-button svg {
-  top: 12px;
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 .search-field input[type="number"]::-webkit-outer-spin-button,
 .search-field input[type="number"]::-webkit-inner-spin-button {
   appearance: none;
 }
 .inner-spin-button {
-  top: 12px;
-  right: 95px;
+  padding: 12px 6.5px 13px 13px;
+  border-radius: 4px 0 0 4px;
 }
 .outer-spin-button {
-  top: 12px;
-  right: 13px;
+  padding: 12px 13px 13px 6.5px;
+  border-radius: 0 4px 4px 0;
 }
 .spin-button:hover svg {
   fill: #000000;
 }
 .spin-button:focus {
+  outline: none;
+} 
+.spin-button:focus svg  {
   outline: 3px solid #83B3D3;
-  outline-offset: -3px;;
+  outline-offset: -3px;
+  border-radius: 4px;
 }
 .spin-button:focus svg {
   fill: #000000;
@@ -1472,6 +1475,7 @@ body {
   border-radius: 10px;
 }
 .modal-container-close {
+  display: none;
 }
 .tooltip-text {
   display: block;
@@ -1501,7 +1505,7 @@ body {
   background-image: url("../images/info-triangle.svg");
   background-repeat: no-repeat;
   background-position: center;
-  position: absolute;
+  position: absolute;1 сентября 2021
   top: -9px;
   right: 0px;
 }
