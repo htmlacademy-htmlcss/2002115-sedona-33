@@ -185,6 +185,7 @@ body {
 }
 .banner {
   text-align: center;
+  background-color: #A9B0C9;
   background-image: url("../images/index-banner.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -387,6 +388,7 @@ body {
   background-image: url("../images/index-footer-background.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
+  background-color: #392F3B;
 }
 .subscribtion-catalog {
   padding: 43px 200px 140px;
@@ -566,6 +568,7 @@ body {
 }
 .inner-header {
   color: #FFFFFF;
+  background-color: #A9B0C9;
   background-image: url("../images/catalog-inner-header-background.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
@@ -1459,7 +1462,7 @@ body {
 }
 .spin-button:focus {
   outline: none;
-} 
+}
 .spin-button:focus svg  {
   outline: 3px solid #83B3D3;
   outline-offset: -3px;
@@ -1505,7 +1508,7 @@ body {
   background-image: url("../images/info-triangle.svg");
   background-repeat: no-repeat;
   background-position: center;
-  position: absolute;1 сентября 2021
+  position: absolute;
   top: -9px;
   right: 0px;
 }
